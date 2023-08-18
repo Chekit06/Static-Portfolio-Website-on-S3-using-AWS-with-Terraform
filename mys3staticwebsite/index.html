@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Chekit's Portfolio</title>
+  <style>
+    /* Your CSS styles can go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('bg.jpg'); /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .about {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .about p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      color: #333;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .contact p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    /* Profile Picture */
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      display: block;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="profile-picture" src="myimg.png" alt="Chekit's Profile Picture"> <!-- Replace with your profile picture URL -->
+    <h1>Chekit Sharma</h1>
+    <p>Welcome to my portfolio website. Explore my projects and feel free to reach out!</p>
+  </header>
+
+  <div class="container">
+    <section class="animate-fade">
+      <h2>About Me</h2>
+      <div class="about">
+        <p>I'm Chekit, a DevOps Engineer who enjoys automation, continuous integration, and deployment. With extensive Hands-on experience in DevOps & Cloud Computing, I am proficient in various tools and technologies related to infrastructure automation, containerization, cloud platforms, monitoring and logging, and CI/CD. My ultimate objective is to assist organizations in achieving quicker, more effective software delivery while maintaining high levels of quality & dependability.
+        </p>
+      </div>
+    </section>
+
+    <section class="animate-fade">
+      <h2>Projects</h2>
+      <div class="project" style="border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #1c84df;">
+        <h3>CI/CD: Note-App Deployment using Declarative Pipeline.
+        </h3>
+        <p>This streamlined process simplifies the transition of the Note-App from code creation to user interaction. The pipeline encompasses essential stages: code checkout, building, automated testing, staging deployment, potential human approval, and final production release. The project underscores the significance of automation, consistency, and transparency, enabling efficient development iterations and ensuring a reliable user experience.</p>
+      </div>
+      <div class="project" style="border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #f06ed4;">
+        <h3>Configured and deployed SuiteCRM web application on EC2 server.</h3>
+        <p>This project involved the successful setup and deployment of the SuiteCRM web application on an AWS EC2 server. Through meticulous configuration and deployment processes, the SuiteCRM application is now operational on a scalable cloud environment. This accomplishment highlights the proficiency in managing web applications on cloud servers, ensuring efficient access and utilization for users.</p>
+      </div>
+      <div class="project" style="border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #e65a5a;">
+        <h3>Created a CI/CD Pipeline of a Web Application using Docker,Jenkins, and AWS Ec2.</h3>
+        <p>In this project, a comprehensive Continuous Integration and Continuous Deployment (CI/CD) pipeline was established for a web application. Utilizing Docker for containerization, Jenkins for automation, and AWS EC2 for hosting, the pipeline ensures a seamless and automated journey from code development to deployment. This achievement highlights proficiency in modern DevOps practices, enhancing efficiency and reliability in software development and delivery.</p>
+      </div>
+      <div class="project" style="border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #3edce7;">
+        <h3>Grafana Hands-on Monitoring and Visualization of System Logs and Nginx.</h3>
+        <p>In the Grafana project, hands-on experience was gained in monitoring and visualizing system logs and Nginx performance. Through the utilization of Grafana's powerful monitoring capabilities, critical insights into system behavior and Nginx server performance were extracted and presented in visually intuitive dashboards. This project demonstrates the proficiency in setting up comprehensive monitoring solutions, enabling effective troubleshooting and optimization of system resources and web server operations.</p>
+      </div>
+      <div class="project" style="border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #0fdf65;">
+        <h3>Python Wrapper for AWS Resources</h3>
+        <p>The Python Wrapper for AWS Resources project involved the development of a user-friendly interface to interact with various AWS resources programmatically. Through this custom Python wrapper, AWS resources such as EC2 instances, and S3 buckets could be easily managed and manipulated. This project showcases the ability to abstract complex AWS interactions, streamlining resource management and enabling efficient automation within Python applications.</p>
+      </div>
+      
+      <!-- Add more project items as needed -->
+    </section>
+
+    <section class="animate-fade">
+      <h2>Contact</h2>
+      <div class="contact">
+        <h3>Contact Me</h3>
+        <p>If you're interested in collaborating or have any questions, feel free to get in touch:</p>
+        <p>Email: chekitsharma06@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chekitsharma?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTYGSc975S6G9uQYPJvbG3A%3D%3D" target="_blank">Chekit on LinkedIn</a></p>
+        <!-- Add more contact information as needed -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
